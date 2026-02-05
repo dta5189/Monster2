@@ -2,7 +2,7 @@
 package Monsters;
 
 public abstract sealed class Monster
-        permits Vampire, Werewolf, Zombie {
+        permits Vampire, Werewolf, Zombie,Wraith, Demon  {
 
     private String name;
     private int health;
