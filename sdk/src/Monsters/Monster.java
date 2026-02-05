@@ -1,3 +1,4 @@
+//abstraction since the main data is being hidden inside
 package Monsters;
 
 public abstract sealed class Monster
@@ -57,6 +58,6 @@ public abstract sealed class Monster
         this.level = level;
     }
 
-    public abstract void specialPowers();
+    public abstract void specialPowers();      //this will be overrided to add it to the children
 }
 
