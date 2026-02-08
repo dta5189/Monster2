@@ -12,7 +12,9 @@ public class Main {
 
         Monster m3 = new Zombie("Frank", 200, 30, Powers.BITE, 3);
 
-        Monster m4 = new Wraith("Nyx", 400, 80, Powers.BLOOD_MANIPULATION, 30)
+        Monster m4 = new Wraith("Nyx", 400, 80, Powers.BLOOD_MANIPULATION, 30);
+
+        Monster m5 =  new Demon("Azrael", 300, 67, Powers.TELEKINESIS, 40);
 
         //Vampire
         System.out.println("Name: " + m1.getName());
@@ -46,6 +48,16 @@ public class Main {
         System.out.println("Level: " + m4.getLevel());
         m4.specialPowers();
         System.out.println("--------------------");
+
+
+        //Demon
+        System.out.println("Name: " + m5.getName());
+        System.out.println("Health: " + m5.getHealth());
+        System.out.println("Attack: " + m5.getAttack());
+        System.out.println("Level: " + m5.getLevel());
+        m5.specialPowers();
+
+
 
 
     }
