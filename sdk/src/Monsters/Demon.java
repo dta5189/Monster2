@@ -9,6 +9,6 @@ public final class Demon extends Monster {
     }
     @Override
     public void specialPowers(){
-        System.out.println("Demon Azrael has lifted a car using" + getPower());
+        System.out.println("Demon Azrael has lifted a car using " + getPower());
     }
 }

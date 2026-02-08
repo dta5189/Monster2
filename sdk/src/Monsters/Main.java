@@ -1,3 +1,11 @@
+/** Project: Monsters
+ * Purpose Details: Create detailed monsters
+ * Course: IST 242
+ * Author: David Adeleye
+ * Date Developed:2/4/26
+ * Last Date Changed: 2/7/26
+ */
+
 package Monsters;
 
 
@@ -15,6 +23,13 @@ public class Main {
         Monster m4 = new Wraith("Nyx", 400, 80, Powers.BLOOD_MANIPULATION, 30);
 
         Monster m5 =  new Demon("Azrael", 300, 67, Powers.TELEKINESIS, 40);
+
+        //set the powers for monsters
+        m1.setPower(Powers.FLIGHT);
+        m2.setPower(Powers.SHAPESHIFT);
+        m3.setPower(Powers.BITE);
+        m4.setPower(Powers.BLOOD_MANIPULATION);
+        m5.setPower(Powers.TELEKINESIS);
 
         //Vampire
         System.out.println("Name: " + m1.getName());
