@@ -13,17 +13,11 @@ package Monsters;
 //you can now manipulate the powers since we have a setter
 public class Main {
     public static void main(String[] args) {
-        Monster m1 = new Vampire("Dracula", 100, 40, Powers.FLIGHT, 5);
-
-
-        Monster m2 = new Werewolf("George", 100, 50, Powers.SHAPESHIFT, 10);
-
-
-        Monster m3 = new Zombie("Frank", 200, 30, Powers.BITE, 3);
-
-        Monster m4 = new Wraith("Nyx", 400, 80, Powers.BLOOD_MANIPULATION, 30);
-
-        Monster m5 =  new Demon("Azrael", 300, 67, Powers.TELEKINESIS, 40);
+        Monster m1 = new Vampire("Dracula", 100, 40, Powers.FLIGHT, 5, 5);
+        Monster m2 = new Werewolf("George", 100, 50, Powers.SHAPESHIFT, 10, "Dark Gray");
+        Monster m3 = new Zombie("Frank", 200, 30, Powers.BITE, 3, 8);
+        Monster m4 = new Wraith("Nyx", 400, 80, Powers.BLOOD_MANIPULATION, 30, 90);
+        Monster m5 = new Demon("Azrael", 300, 67, Powers.TELEKINESIS, 40, 2);
 
         //set the powers for monsters
         m1.setPower(Powers.FLIGHT);
@@ -37,6 +31,10 @@ public class Main {
         System.out.println("Health: " + m1.getHealth());
         System.out.println("Attack: " + m1.getAttack());
         System.out.println("Level: " + m1.getLevel());
+
+        Vampire v = (Vampire) m1;
+        System.out.println("Fang Length: " + v.getFangLength());
+
         m1.specialPowers();
         System.out.println("--------------------");
 
@@ -45,15 +43,22 @@ public class Main {
         System.out.println("Health: " + m2.getHealth());
         System.out.println("Attack: " + m2.getAttack());
         System.out.println("Level: " + m2.getLevel());
+
+        Werewolf w = (Werewolf) m2;
+        System.out.println("Fur Color: " + w.getFurColor());
+
         m2.specialPowers();
         System.out.println("--------------------");
-
 
         //Zombie
         System.out.println("Name: " + m3.getName());
         System.out.println("Health: " + m3.getHealth());
         System.out.println("Attack: " + m3.getAttack());
         System.out.println("Level: " + m3.getLevel());
+
+        Zombie z = (Zombie) m3;
+        System.out.println("Decay Level: " + z.getDecayLevel());
+
         m3.specialPowers();
         System.out.println("--------------------");
 
@@ -62,6 +67,10 @@ public class Main {
         System.out.println("Health: " + m4.getHealth());
         System.out.println("Attack: " + m4.getAttack());
         System.out.println("Level: " + m4.getLevel());
+
+        Wraith wr = (Wraith) m4;
+        System.out.println("Transparency Level: " + wr.getTransparencyLevel());
+
         m4.specialPowers();
         System.out.println("--------------------");
 
@@ -71,6 +80,10 @@ public class Main {
         System.out.println("Health: " + m5.getHealth());
         System.out.println("Attack: " + m5.getAttack());
         System.out.println("Level: " + m5.getLevel());
+
+        Demon d = (Demon) m5;
+        System.out.println("Horn Count: " + d.getHornCount());
+
         m5.specialPowers();
 
 

@@ -2,7 +2,7 @@
 package Monsters;
 
 public abstract sealed class Monster
-        permits Vampire, Werewolf, Zombie,Wraith, Demon  {
+        permits Vampire, Werewolf, Zombie,Wraith, Demon {
 
     private String name;
     private int health;
@@ -10,12 +10,15 @@ public abstract sealed class Monster
     private Powers power;
     private int level;
 
+
     public Monster(String name, int health, int attack, Powers power, int level) {
         this.name = name;
         this.health = health;
         this.attack = attack;
         this.power = power;
         this.level = level;
+
+
     }
 
     public String getName() {
@@ -58,6 +61,9 @@ public abstract sealed class Monster
         this.level = level;
     }
 
-    public abstract void specialPowers();      //this will be overrided to add it to the children
+    public abstract void specialPowers();
+    //this will be overrided to add it to the children
+
+     
 }
 
